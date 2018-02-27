@@ -15,20 +15,20 @@ Automated quick install via cli, drush and a custom install profile / makefile
 `$ drush si profilename --db-url=mysql://user:pass@localhost/dbname`
 
 
-## Modules
-*admin_menurc5
-*adminimal_admin_menu
-*module_filter
-*ctools
-*devel
-*profiler_builder
-*jquery_update
-*views
-*views_bootstrap
+### Modules
+* admin_menurc5
+* adminimal_admin_menu
+* module_filter
+* ctools
+* devel
+* profiler_builder
+* jquery_update
+* views
+* views_bootstrap
 
-## Themes
-*bootstrap
-*adminimal_theme
+### Themes
+* bootstrap
+* adminimal_theme
 
 
 cheers
