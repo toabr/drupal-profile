@@ -2,11 +2,13 @@
 
 Automated quick install via cli, drush and a custom install profile / makefile
 
-**download drupl core and a few important modules via makefile**
+## Installation
+
+**download drupal core and a few important modules via makefile**
 
 `$ drush make path/to/makefile path/to/installation`
 
-**copy installation profile to project and start installation**
+**copy the installation profile to your project**
 
 `$ cp path/to/my/profileFolder projectsFolder/profiles`
 
@@ -14,9 +16,10 @@ Automated quick install via cli, drush and a custom install profile / makefile
 
 `$ drush si profilename --db-url=mysql://user:pass@localhost/dbname`
 
+## Includes
 
 ### Modules
-* admin_menurc5
+* admin_menu
 * adminimal_admin_menu
 * module_filter
 * ctools
@@ -29,7 +32,6 @@ Automated quick install via cli, drush and a custom install profile / makefile
 ### Themes
 * bootstrap
 * adminimal_theme
-
 
 cheers
 
