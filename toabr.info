@@ -34,7 +34,6 @@ dependencies[] = menu
 dependencies[] = node
 dependencies[] = number
 dependencies[] = options
-dependencies[] = overlay
 dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
