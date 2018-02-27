@@ -16,7 +16,9 @@ dependencies[] = rename_admin_paths
 dependencies[] = ctools
 ; Core
 dependencies[] = block
+dependencies[] = color
 dependencies[] = comment
+dependencies[] = contact
 dependencies[] = contextual
 dependencies[] = dashboard
 dependencies[] = dblog
@@ -28,7 +30,6 @@ dependencies[] = filter
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
-dependencies[] = locale
 dependencies[] = menu
 dependencies[] = node
 dependencies[] = number
@@ -45,6 +46,7 @@ dependencies[] = update
 dependencies[] = user
 ; Development
 dependencies[] = devel
+dependencies[] = devel_generate
 dependencies[] = profiler_builder
 ; Other
 dependencies[] = colorbox

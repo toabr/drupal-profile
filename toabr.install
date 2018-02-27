@@ -6,7 +6,7 @@
  */
 function toabr_install() {
   // Enable some toabr blocks.
-  $default_theme = 'bootstrap';
+  $default_theme = 'less';
   $admin_theme = 'adminimal';
   // disable all themes
   db_update('system')

@@ -42,8 +42,16 @@ projects[bootstrap][version] = "3.19"
 ; bootstrap less subtheme
 projects[less][directory_name] = "less"
 projects[less][type] = "theme"
+projects[less][destination] = "themes"
 projects[less][download][type] = "get"
 projects[less][download][url] = "https://github.com/toabr/drupal-bootstrap-subtheme/archive/master.zip"
+
+; bootstrap source code
+projects[bootstrap_source_code][directory_name] = "bootstrap"
+projects[bootstrap_source_code][type] = "library"
+projects[bootstrap_source_code][destination] = "themes/less"
+projects[bootstrap_source_code][download][type] = "get"
+projects[bootstrap_source_code][download][url] = "https://github.com/twbs/bootstrap/archive/v3.3.7.zip"
 
 
 ; +++++ Libraries +++++
