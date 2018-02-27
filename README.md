@@ -6,11 +6,7 @@ Automated quick install via cli, drush and a custom install profile / makefile
 
 **download drupal core and a few important modules via makefile**
 
-`$ drush make path/to/makefile path/to/installation`
-
-**copy the installation profile to your project**
-
-`$ cp path/to/my/profileFolder projectsFolder/profiles`
+`$ drush make path/to/toabr.make path/to/installation`
 
 **finally let da magic happen**
 
@@ -22,16 +18,27 @@ Automated quick install via cli, drush and a custom install profile / makefile
 * admin_menu
 * adminimal_admin_menu
 * module_filter
+* rename_admin_paths
 * ctools
 * devel
 * profiler_builder
+* colorbox
+* libraries
+* pathauto
+* token
+* ckeditor
 * jquery_update
 * views
 * views_bootstrap
 
 ### Themes
 * bootstrap
+  * precompiled less subtheme
 * adminimal_theme
+
+### Libraries
+* colorbox
+
 
 cheers
 

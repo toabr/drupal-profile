@@ -39,6 +39,13 @@ projects[adminimal_theme][version] = "1.24"
 projects[bootstrap][type] = "theme"
 projects[bootstrap][version] = "3.19"
 
+; bootstrap less subtheme
+projects[less][directory_name] = "less"
+projects[less][type] = "theme"
+projects[less][download][type] = "get"
+projects[less][download][url] = "https://github.com/toabr/drupal-bootstrap-subtheme/archive/master.zip"
+
+
 ; +++++ Libraries +++++
 
 ; ColorBox
@@ -46,4 +53,4 @@ libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][type] = "library"
 libraries[colorbox][destination] = "libraries"
 libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "https://codeload.github.com/jackmoore/colorbox/zip/1.x"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
