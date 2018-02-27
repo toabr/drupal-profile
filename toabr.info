@@ -11,6 +11,7 @@ dependencies[] = admin_devel
 dependencies[] = admin_menu
 dependencies[] = adminimal_admin_menu
 dependencies[] = module_filter
+dependencies[] = rename_admin_paths
 ; Chaos tool suite
 dependencies[] = ctools
 ; Core
@@ -40,14 +41,20 @@ dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
+dependencies[] = update
 dependencies[] = user
 ; Development
 dependencies[] = devel
 dependencies[] = profiler_builder
+; Other
+dependencies[] = colorbox
+dependencies[] = libraries
+dependencies[] = pathauto
+dependencies[] = token
 ; User interface
+dependencies[] = ckeditor
 dependencies[] = jquery_update
 ; Views
 dependencies[] = views
 dependencies[] = views_bootstrap
 dependencies[] = views_ui
-
