@@ -1,10 +1,32 @@
 <?php
+
+/**
+ * Implements hook_install_tasks_alter().
+ */
+
+function toabr_install_tasks_alter(&$tasks, $install_state) {
+  // change installation theme
+  $target_theme = 'garland';
+  if ($GLOBALS['theme'] != $target_theme) {
+    unset($GLOBALS['theme']);
+
+    drupal_static_reset();
+    $GLOBALS['conf']['maintenance_theme'] = $target_theme;
+    _drupal_maintenance_theme();
+  }
+}
+
 /**
  * Implements hook_install().
  *
  * Perform actions to set up the site for this profile.
  */
 function toabr_install() {
+  variable_set('date_first_day',1);
+  variable_set('date_format_long','l, j. F Y - G:i');
+  variable_set('date_format_medium','j. F Y - G:i');
+  variable_set('date_format_short','d.m.Y - H:i');
+
   // Add text formats.
   $filtered_html_format = array(
     'format' => 'filtered_html',

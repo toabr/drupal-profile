@@ -10,7 +10,7 @@ Automated quick install via cli, drush and a custom install profile / makefile
 
 **finally let da magic happen**
 
-`$ drush si profilename --db-url=mysql://user:pass@localhost/dbname`
+`$ drush si --db-url=mysql://user:pass@localhost/dbname`
 
 ## Includes
 

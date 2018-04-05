@@ -1,7 +1,7 @@
 ; Packaging information for toabr
 name = "toabr"
 description = ""
-exclusive = "1"
+exclusive = TRUE
 core = "7.x"
 ; ----------
 ; Dependencies
@@ -30,6 +30,7 @@ dependencies[] = filter
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
+dependencies[] = locale
 dependencies[] = menu
 dependencies[] = node
 dependencies[] = number
