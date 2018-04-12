@@ -6,7 +6,7 @@
 
 function toabr_install_tasks_alter(&$tasks, $install_state) {
   // change installation theme
-  $target_theme = 'garland';
+  $target_theme = 'adminimal';
   if ($GLOBALS['theme'] != $target_theme) {
     unset($GLOBALS['theme']);
 
@@ -22,10 +22,19 @@ function toabr_install_tasks_alter(&$tasks, $install_state) {
  * Perform actions to set up the site for this profile.
  */
 function toabr_install() {
+  // date settings
   variable_set('date_first_day',1);
   variable_set('date_format_long','l, j. F Y - G:i');
   variable_set('date_format_medium','j. F Y - G:i');
   variable_set('date_format_short','d.m.Y - H:i');
+
+  // development settings
+  variable_set('cache',0);
+  variable_set('error_level',2);
+  variable_set('devel_rebuild_theme_registry',1);
+
+  // activate honeypot for all forms
+  variable_set('honeypot_protect_all_forms',1);
 
   // Add text formats.
   $filtered_html_format = array(

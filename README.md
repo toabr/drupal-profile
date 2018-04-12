@@ -15,21 +15,40 @@ Automated quick install via cli, drush and a custom install profile / makefile
 ## Includes
 
 ### Modules
+#### Admin
 * admin_menu
 * adminimal_admin_menu
 * module_filter
 * rename_admin_paths
 * ctools
+* htaccess
+
+#### Development
 * devel
+* search_krumo
 * profiler_builder
-* colorbox
-* libraries
-* pathauto
-* token
-* ckeditor
-* jquery_update
+
+#### Fields
+* date
+* entity
+* field_group
+* link
+
+#### Views
 * views
 * views_bootstrap
+* views_fieldsets
+* views_field_view
+
+#### Other
+* ckeditor
+* colorbox
+* honeypot
+* jquery_update
+* libraries
+* metatag
+* pathauto
+* token
 
 ### Themes
 * bootstrap

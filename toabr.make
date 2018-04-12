@@ -1,4 +1,6 @@
 ; toabr make file for d.o. usage
+; drush make drupal_dev.make mysite
+
 core = "7.x"
 api = "2"
 
@@ -13,31 +15,48 @@ projects[toabr][download][url] = "https://github.com/toabr/drupal-profile/archiv
 
 ; +++++ Modules +++++
 
-projects[admin_menu][version] = "3.0-rc5"
-projects[adminimal_admin_menu][version] = "1.7"
-projects[module_filter][version] = "2.1"
-projects[rename_admin_paths][version] = "2.3"
-projects[ctools][version] = "1.14"
-projects[devel][version] = "1.5"
-projects[profiler_builder][version] = "1.2"
-projects[colorbox][version] = "2.13"
-projects[libraries][version] = "2.3"
-projects[pathauto][version] = "1.3"
-projects[token][version] = "1.7"
-projects[ckeditor][version] = "1.18"
-projects[jquery_update][version] = "2.7"
-projects[views][version] = "3.18"
-projects[views_bootstrap][version] = "3.2"
+; Admin
+projects[] = admin_menu
+projects[] = adminimal_admin_menu
+projects[] = module_filter
+projects[] = rename_admin_paths
+projects[] = ctools
+projects[] = htaccess
+
+; Development
+projects[] = devel
+projects[] = search_krumo
+projects[] = profiler_builder
+
+; Fields
+projects[] = date
+projects[] = entity
+projects[] = field_group
+projects[] = link
+
+; Views
+projects[] = views
+projects[] = views_bootstrap
+projects[] = views_fieldsets
+projects[] = views_field_view
+
+; Other
+projects[] = ckeditor
+projects[] = colorbox
+projects[] = honeypot
+projects[] = jquery_update
+projects[] = libraries
+projects[] = metatag
+projects[] = pathauto
+projects[] = token
 
 ; +++++ Themes +++++
 
 ; adminimal_theme
 projects[adminimal_theme][type] = "theme"
-projects[adminimal_theme][version] = "1.24"
 
 ; bootstrap
 projects[bootstrap][type] = "theme"
-projects[bootstrap][version] = "3.19"
 
 ; bootstrap less subtheme
 projects[less][directory_name] = "less"
@@ -52,7 +71,6 @@ projects[bootstrap_source_code][type] = "library"
 projects[bootstrap_source_code][destination] = "themes/less"
 projects[bootstrap_source_code][download][type] = "get"
 projects[bootstrap_source_code][download][url] = "https://github.com/twbs/bootstrap/archive/v3.3.7.zip"
-
 
 ; +++++ Libraries +++++
 

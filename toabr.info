@@ -1,24 +1,16 @@
 ; Packaging information for toabr
-name = "toabr"
-description = ""
+
+name = toabr
+description = bootstrap starterkit plus
 exclusive = TRUE
 core = "7.x"
-; ----------
-; Dependencies
-; ----------
-; Administration
-dependencies[] = admin_devel
-dependencies[] = admin_menu
-dependencies[] = adminimal_admin_menu
-dependencies[] = module_filter
-dependencies[] = rename_admin_paths
-; Chaos tool suite
-dependencies[] = ctools
+
+; +++++ Dependencies +++++
+
 ; Core
 dependencies[] = block
-dependencies[] = color
-dependencies[] = comment
 dependencies[] = contact
+dependencies[] = comment
 dependencies[] = contextual
 dependencies[] = dashboard
 dependencies[] = dblog
@@ -44,19 +36,36 @@ dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = update
 dependencies[] = user
+
+; Administration
+dependencies[] = admin_devel
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = module_filter
+dependencies[] = rename_admin_paths
+
+; Chaos tool suite
+dependencies[] = ctools
+
 ; Development
 dependencies[] = devel
 dependencies[] = devel_generate
-dependencies[] = profiler_builder
+dependencies[] = search_krumo
+
+; Spam control
+dependencies[] = honeypot
+
+; User interface
+dependencies[] = ckeditor
+dependencies[] = jquery_update
+
+; Views
+dependencies[] = views
+dependencies[] = views_bootstrap
+dependencies[] = views_ui
+
 ; Other
 dependencies[] = colorbox
 dependencies[] = libraries
 dependencies[] = pathauto
 dependencies[] = token
-; User interface
-dependencies[] = ckeditor
-dependencies[] = jquery_update
-; Views
-dependencies[] = views
-dependencies[] = views_bootstrap
-dependencies[] = views_ui
